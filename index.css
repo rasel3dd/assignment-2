@@ -83,6 +83,75 @@ body {
       width: 500px;
       height: 400px;
     }
+     /* Plants Section */
+    .plants-section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin: 50px 160px;
+    }
+
+    .plants-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .plants-section h2 span {
+      color: #f15a29;
+    }
+
+    .plants-section p {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      color: #666;
+    }
+
+    .plant-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      justify-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .plant-item {
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .plant-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .plant-name {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .plant-price {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .add-to-cart {
+      background-color: #f15a29;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    .add-to-cart:hover {
+      background-color: #d94e20;}
 
 
 
