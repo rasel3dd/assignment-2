@@ -91,16 +91,16 @@ body {
       margin: 50px 160px;
     }
 
-    .plants-section h2 {
+    .title-P h2 {
       font-size: 2rem;
       margin-bottom: 10px;
     }
 
-    .plants-section h2 span {
+    .title-P h2 span {
       color: #f15a29;
     }
 
-    .plants-section p {
+    .title-P p {
       max-width: 600px;
       margin: 0 auto 40px;
       color: #666;
@@ -144,73 +144,75 @@ body {
       color: white;
       padding: 8px 15px;
       border: none;
-      cursor: pointer;
       font-size: 0.9rem;
       width: 100%;
-      transition: background 0.3s;
     }
 
-    .add-to-cart:hover {
-      background-color: #d94e20;}
-
+  
 /* Lover-Section */
 
-.lover-section{
-              display: flex;
-              margin: 50px 160px;
-            }
-        .container {
-            display: flex;
-            margin: 50px 160px;
-          
-            }
-        .left-section {
-            flex: 1;
-            position: relative;
-            background-image: url(assets/flower-store.png);
-            background-size: cover;
-            background-position: center;
-           
+ .lover-section{
+ display: flex;
+ gap: 300px;
+ align-items: center;
+ justify-content: center;
+  }
+
+     .trusted-badge {
+      position: relative;
+      width: 320px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      
+    }
+
+    .trusted-badge img.main-image {
+      width: 540px;
+      height: 590px;
+      
+    }
+
+    .badge {
+      position: absolute;
+      top: -120px;
+      right: -150px;
+      width: 100px;
+      z-index: 1;
+    }
+
+    .badge img {
+      width: 280px;
+      height: 280px;
+    }
+ .right-section {
+  
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  
             
-        }
-        .trusted-seller {
-            position: absolute;
-            top: -90px;
-            right: -90px;
-            width: 200px; 
-            height: 200px;
-            background-image: url(assets/trusted-badge.png);
-            background-size: contain;
+  }
+.right-section h1 {
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 15px;
+  }
+.right-section ul {
+   list-style: disc;
+   padding-left: 30px;
             
-        }
-        .right-section {
-            flex: 1;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            
-        }
-        h1 {
-            font-size: 50px;
-            color: #333;
-            margin-bottom: 15px;
-        }
-        ul {
-            list-style: disc;
-            padding-left: 30px;
-            
-        }
-        li {
-            margin-bottom: 15px;
-            color: #555;
-            line-height: 1.6;
-        }
-        /* <!--   Deal Section --> */
-        .deals{
+  }
+.right-section li {
+   margin-bottom: 15px;
+   color: #555;
+   line-height: 1.6;
+   font-size: 20px;
+  } 
+ /* <!--   Deal Section --> */
+.deals{
     margin: 50px 160px;
 }
-h1 {
+.deals h1 {
   text-align: center;
   margin-top: 40px;
   font-size: 2.5rem;
@@ -220,7 +222,7 @@ h1 {
   color: orange;
 }
 
-p {
+.deals p {
   text-align: center;
   max-width: 700px;
   margin: 10px auto 30px;
@@ -267,7 +269,7 @@ p {
 .deal-card.small {
   
   height: 170px;
-}
+} 
 /* Subscribe-section */
 .subscribe {
   background-image: url(assets/news-letter-bg.png);
@@ -286,7 +288,7 @@ p {
 .subscribe-content form {
   display: flex;
   justify-content: center;
-  max-width: 600px;
+  max-width: 430px;
   margin: auto;
 }
 
@@ -304,10 +306,10 @@ p {
   padding: 10px 20px;
   border-radius: 0 4px 4px 0;
   
-}
+} 
 /* Footer section */
 
-footer {
+ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -349,6 +351,51 @@ footer {
 }
 footer{
     margin: 50px 160px;
-}
+} 
 
-   
+  /*  mobile-Responsive */
+  @media screen and (max-width: 576px) {
+
+    .nav-links a{
+      display: none;
+    }
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .plants-section{
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    .plant-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      
+    .deals{
+      margin: 0 auto;
+    }
+    .deal-grid{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .deal-card.large{
+      height: 180px;
+      width: 350px;
+      padding: 10px 10px;
+    }
+    .deal-card.small{
+       height: 180px;
+      width: 350px;
+      
+    }
+    .deals p{
+      width: 400px;
+      margin: 0 auto;
+    }
+    footer{
+      flex-direction: column;
+      padding: 0;
+    }
+    .footer-links{
+      flex-direction: column;
+    }
+  }
