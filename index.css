@@ -92,7 +92,7 @@ body {
     }
 
     .title-P h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
 
@@ -104,6 +104,7 @@ body {
       max-width: 600px;
       margin: 0 auto 40px;
       color: #666;
+      font-size: 30px;
     }
 
     .plant-grid {
@@ -161,8 +162,6 @@ body {
      .trusted-badge {
       position: relative;
       width: 320px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      border-radius: 10px;
       
     }
 
@@ -226,6 +225,8 @@ body {
   text-align: center;
   max-width: 700px;
   margin: 10px auto 30px;
+  font-size: 30px;
+  color: #666;
 }
 
 .deal-grid {
@@ -251,7 +252,7 @@ body {
 }
 .small{
     margin: 10px;
-    width: 700px;
+    
 }
 
 .deal-card a {
@@ -263,12 +264,14 @@ body {
 .deal-card.large {
   
   height: 350px;
+  width: 800px;
 
 }
 
 .deal-card.small {
   
   height: 170px;
+  width: 650px;
 } 
 /* Subscribe-section */
 .subscribe {
@@ -362,6 +365,10 @@ footer{
     .banner{
       flex-direction: column-reverse;
     }
+    .banner-img{
+    height: 396px;
+    width: 350px;
+    }
     .plants-section{
       flex-direction: column;
       margin: 0 auto;
@@ -393,9 +400,42 @@ footer{
     }
     footer{
       flex-direction: column;
-      padding: 0;
+      align-items: start;
+      margin: 10px 10px 0 30px;
     }
     .footer-links{
       flex-direction: column;
+      gap: 5px;
+      font-size: 16px;
     }
+    .footer-icons img{
+      width: 15px;
+      height: 15px;
+    }
+    .lover-section{
+      flex-direction: column;
+      gap: 10px;
+
+    }
+   
+   .trusted-badge img.main-image{
+    height: 396px;
+    width: 350px;
+   }
+   .badge img{
+    display: none;
+   }
+   .deals p{
+    font-size: 16px;
+   }
+  .title-P p{
+    font-size: 16px;
+  }
+  .banner-text h1{
+    font-size: 40px;
+  }
+  .right-section h1{
+    font-size: 30px;
+    margin: 0 20px;
+  }
   }
